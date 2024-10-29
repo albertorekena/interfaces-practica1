@@ -1,0 +1,344 @@
+:root {
+	--color-corporativo: rgb(240,93,80);
+	--color-corporativo-hover: rgba(240,93,80,0.5);
+	--fuente-corporativa: Georgia, 'Times New Roman', Times, serif;
+	--fuente-principal: Helvetica, Arial, sans-serif;
+	--color-texto: rgb(0, 0, 25);
+	--color-texto-destacado: rgba(0, 0, 25, 0.5);
+
+	--menu-enlace: rgb(0, 0, 25);
+	--menu-enlace-hover: rgba(0, 0, 25, 0.5);
+
+	--footer-bg: rgb(0, 0, 25);
+	--footer-blanco: rgb(255, 255, 255);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--fuente-principal);
+	color: var(--color-texto);
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+a {
+	color: var(--color-corporativo);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-corporativo-hover);
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+cite {
+	font-family: var(--fuente-corporativa);
+	font-style: italic;
+}
+
+
+/* UTILIDADES */
+
+.container {
+	width: 95%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+
+.figure {
+	text-align: center;
+}
+
+.figure--margin-top {
+	margin-top: 28px;
+}
+
+.figure__image,
+.figure__iframe {
+	display: block;
+	margin: 0 auto 20px auto;
+	border: 0;
+}
+
+.figure__caption {
+	font-size: 9px;
+}
+
+
+/* HEADER */
+
+.header {
+	padding: 30px 0 50px 0;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.header__logo {
+	font-family: var(--fuente-corporativa);
+	color: var(--color-corporativo);
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header__logo:hover {
+	color: var(--color-corporativo);
+}
+
+.header__lista {
+	list-style: none;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+}
+
+.header__menu-item {}
+
+.header__menu-item--activo {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.header__menu-enlace {
+	color: var(--menu-enlace);
+	text-decoration: none;
+}
+
+.header__menu-enlace:hover {
+	color: var(--menu-enlace-hover);
+}
+
+
+/* PRINCIPAL */
+
+.article {}
+
+.article__header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.article__header-titles,
+.main-titles {
+	margin-bottom: 16px;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.article__header-titles--margin-bottom {
+	margin-bottom: 20px;
+}
+
+.article__header-title,
+.main-titles__title {}
+
+.article__header-subtitle,
+.main-titles__subtitle {
+	max-width: 540px;
+	font-size: 14px;
+	line-height: 1.7;
+	text-align: center;
+}
+
+.article__header-author {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.article__header-date {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.article__introduction-paragraph {
+	max-width: 540px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.article__body-section {
+	margin-bottom: 24px;
+}
+
+.article__body-section--margin-top {
+	margin-top: 34px;
+}
+
+.article__body-section-title {
+	margin-bottom: 20px;
+}
+
+.article__body-section-paragraph {
+	margin-bottom: 13px;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.article__body-section-blockquote {
+	padding-left: 36px;
+	margin-bottom: 18px;
+	font-family: var(--fuente-corporativa);
+}
+
+.article__body-section-blockquote-quote {
+	margin-bottom: 12px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.article__body-section-blockquote-caption {
+	font-size: 12px;
+	font-style: italic;
+}
+
+.article__footer {
+	margin-top: 30px;
+}
+
+.article__footer-author {
+	font-family: var(--fuente-corporativa);
+	font-size: 12px;
+	font-style: italic;
+}
+
+.footer {
+	background-color: var(--footer-bg);
+	padding: 50px 0;
+}
+
+.footer__paragraph {
+	display: block;
+	color: var(--footer-blanco);
+	font-size: 13px;
+	text-align: center;
+}
+
+.footer__paragraph-reserverd-rights {
+	display: block;
+	margin-top: 18px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.footer__paragraph-reserverd-rights-enlace {
+	color: var(--footer-blanco);
+}
+
+
+/* LISTADO NOBEL LITERATURA */
+
+.clarification {
+	margin-bottom: 30px;
+	font-size: 9px;
+	text-align: center;
+}
+
+.clarification--uppercase {
+	text-transform: uppercase;
+}
+
+.clarification--footer {
+	margin-top: 38px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+
+.lista-premios {
+	max-width: 380px;
+	margin-left: auto;
+	margin-right: auto;
+	/* list-style-image: url("../img/idioma.png"); */
+	list-style: none;
+}
+
+.lista-premios__idioma {
+	position: relative;
+	margin-bottom: 16px;
+	color: var(--color-texto-destacado);
+	font-weight: bold;
+}
+
+.lista-premios__idioma::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -33px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: no-repeat center url("../img/idioma.png");
+	background-size: 23px;
+}
+
+.lista-premios__lista-autores {
+	padding-left: 30px;
+	color: var(--color-texto);
+	list-style-image: none;
+	list-style-type: square;
+}
+
+.lista-premios__lista-autores-item {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.lista-premios__lista-autores-item-anyo,
+.motivacion-premios__motivo-anyo {
+	font-size: 16px;
+	color: var(--color-texto-destacado);
+	font-weight: bold;
+}
+
+.lista-premios__enlace-autor {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+/* MOTIVACIÓN PREMIOS */
+
+.motivacion-premios {
+	max-width: 736px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.motivacion-premios__premiado {
+	margin-bottom: 22px;
+}
+
+.motivacion-premios__premiado-enlace-autor {
+	font-weight: bold;
+}
+
+.motivacion-premios__motivo {
+	margin-bottom: 22px;
+	padding-left: 24px;
+	font-size: 13px;
+	line-height: 1.7;
+}
